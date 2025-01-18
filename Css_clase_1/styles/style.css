@@ -1,15 +1,48 @@
+/* SELECTOR UNIVERSAL*/
+*{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /* SELECTOR DE ETIQUETA (para todos los elementos)*/ /*LO MAS ESPECIFICO GANA A LO GLOBAL etiqueta>clase>id*/
-P {
+/* P {
     text-decoration: underline;
-}
+} */
 /*SELECTOR DE CLASE (para los elementos de pepito)*/
-.pepito { 
+/* .pepito { 
     color: black;
-}
+} */
 /*SELECTOR DE ID (solo para cada id)*/
-#argentina {
+/* #argentina {
     background-color: blueviolet;
 }
 #brasil { 
     background-color: yellow;
+} */
+/* SELECTOR COMBINADO DE HIJOS */
+/*section > p {
+    color: red;
 }
+article > p {
+    color: violet;
+}
+*/
+
+/* SELECTOR COMBINADO DE DESCENDIENTES*/
+/*.lamparas p {
+    color: red;
+}*/
+
+/* SELECTOR COMBINADO DE HERMANOS*/
+/*h2~p {
+    color: silver;
+}*/
+
+/*SELECTOR COMBINADO DE HERMANOS ADYACENTES*/
+/* h2 + p {
+    color: greenyellow;
+} */
+
+/* SELECTOR COMBINADO DE ATRIBUTOS */ 
+/*input[type="text"] {
+    color: blue;
+}*/
