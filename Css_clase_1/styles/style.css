@@ -1,0 +1,15 @@
+/* SELECTOR DE ETIQUETA (para todos los elementos)*/ /*LO MAS ESPECIFICO GANA A LO GLOBAL etiqueta>clase>id*/
+P {
+    text-decoration: underline;
+}
+/*SELECTOR DE CLASE (para los elementos de pepito)*/
+.pepito { 
+    color: black;
+}
+/*SELECTOR DE ID (solo para cada id)*/
+#argentina {
+    background-color: blueviolet;
+}
+#brasil { 
+    background-color: yellow;
+}
