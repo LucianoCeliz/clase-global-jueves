@@ -1,0 +1,32 @@
+/*
+       COLORES
+    
+       RGB - (valor, valor, valor) 0 y 255
+                R      G      B
+
+
+
+       HEXADECIMAL - 0 1 2 3 4 5 6 7 8 9 A B C D E F - 3F 48 CD
+                                                        R  G  B     
+
+
+       HSL - ( MATIZ, SATURACION, BRILLO )
+                HUE    SATURATION LIGHTNESS
+              0 - 360   0 - 100%    0 - 100%
+
+*/
+/*
+p{
+    color: rgb(200, 150, 120);
+}
+    */
+/*
+p {
+    color: #3F4DE1;
+}
+    */
+
+p{
+    color: rgb(124, 40, 92)    ;
+}
+

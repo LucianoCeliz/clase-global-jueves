@@ -1,0 +1,66 @@
+/* 
+
+DIMENSIONES
+
+        - ABSOLUTAS ( Tienen un valor por si mismas)
+                    ( Ej: metros, pulgadas, kilogramos)
+                     Ej digital: PIXELES 
+            
+        - RELATIVAS ( Dependen de otra dimension para adquirir valor)
+                     Ejemplos digitales: 
+                                        - Porcentuales
+                                        - Rem
+                                        - Em 
+                                        - viewport hieght
+                                        - viewport width
+*/
+
+/*div {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    display: inline-block;
+} */
+
+/* comando "b" - letra en negrita
+   comando "span" - le da estilo a una parte del texto
+   */
+
+/*span {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}   */
+
+/*
+ .container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+
+}
+    */
+html {
+    font-size: 16px; /* 16px = 1rem ( Le da el tamaño gral a todo el html) */
+}
+/*
+h1 {
+    font-size: 2rem;
+}
+    */
+/*
+h2{
+    font-size: 1.75rem;
+}
+    */
+/*
+h3{
+    font-size: 1.5rem;
+}
+    */
+/*
+h4{
+    font-size: 1.25rem;
+} 
+*/
