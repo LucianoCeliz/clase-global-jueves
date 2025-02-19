@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/****** MODELOS DE CAJAS O BOX MODELING *******/
+
+/*
+Considera a todos los container como cajas y utilizar
+sus caracteristicas que son:
+        - CONTENIDO (texto o imagen que pueda contener)
+        - RELLENO - padding
+        - BORDE - border
+        - MARGEN - margin
+*/
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    font-size: 2rem;
+    padding: 50px 200px 150px 100px;
+    border: 10px dashed orange; 
+   /*  margin: 10px; */
+
+}
+.box2{
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+}

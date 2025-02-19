@@ -25,8 +25,20 @@ p {
     color: #3F4DE1;
 }
     */
-
-p{
-    color: rgb(124, 40, 92)    ;
+.hamburguesa-container {
+    height: 500px;
+    width: 500px;
+    background-image: url(./../images/Messi.jpg);
+    background-size: cover;
+    background-position: center;
 }
-
+.filter {
+    background-color: rgba(0, 0, 0 , 0,5);
+    width: 100%;
+    height: 100%;
+}
+p {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,24 @@
+/*********** BACKGROUND *************/
+
+.container{ /*Cuando la imagen es mas grande que el container*/ 
+    width: 500px;
+    height: 500px;
+    background-image: url(./../images/Roman.jpg);
+    background-position: 50% 50%;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    .filtro{
+        background-color: rgba(0, 0, 0, 0.5);
+        width: inherit;
+        height: inherit;
+    }}
+
+.container2 { /* Imagen mas pequeña que el container*/
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    background-image: url(./../images/abeja.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}   
