@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    box-sizing: box;
+    
+}
+/******* FLEXBOX *******/
+/*
+   Sistema de distribucion de cajas.
+   Nos permite flexibilizar dicha distribución.
+   */
+
+   /*PRIMER TRAMO ( -La distribucion flexible *display:flex* se establece
+                     en el contenedor padre.
+                    - Esto habilita el uso de nuevas propiedades
+                    que afectan la distrucion de los hijos.)
+   */
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: aqua; 
+
+    display: flex;
+    flex-direction: row; /*Permite elegir la direccion de despliegue de los elementos hijos*/
+                         /*-Row:Forma lateral -Colum:Forma columna*/
+    justify-content: center; /*Distribuye los elementos en el eje X*/
+                                   /* - Star: principio -center:medio -end:final
+                                      -space-between:elementos distribuidos en el espacio del eje*/                     
+    align-items: center;  /*Distribuye los elementos en el eje Y */
+    gap: 10px;  /* Genera una brecha entre las cajas
+                   -Gap:Brecha a los 4 lados de las cajas
+                   -Row-gap:Brecha en los costados en forma lateral
+                   -Column-gap:Brecha en los costados de forma de columna*/
+
+ }  
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: 2px solid black;
+
+}
+/*Si queremos mover una sola caja hay que crear una clase especifica ej:*/
+
+.uno {
+    align-self: start;
+}
+
+/*NOS CONVIENE CREAR UNA CLASE PREFABRICADA "ej: center" E INVOCARLA CADA VEZ
+  QUE QUERRAMOS USARLA. CREAMOS UNA ANOTACION "Utilities" Y AHI 
+  PONEMOS TODOS LOS ATAJOS DE CLASE QUE QUERRAMOS*/
+
+
