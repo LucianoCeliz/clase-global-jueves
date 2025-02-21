@@ -1,0 +1,32 @@
+/******************* PAGE STYLES (Solo en una pagina en especial) *******************/
+body{
+    background-image: url(../assets/images/yoda_fondohome.jpg); /*Fondo del Home solamente */
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+/*********** HOME **************/
+.home {
+    height: 100vh; /*Ocupa todo el alto de la pantalla*/
+    width: 100%;   /*Ocupa todo el ancho de la pantalla*/
+    display: flex;
+    flex-direction: column; /*Coloca uno abajo del otro*/
+    justify-content: center; /*Centra en el eje y*/
+    padding-left: 2%;
+
+    & h1 {
+        color: var(--white-color);
+        font-size: 5rem;
+    }
+
+    & span {
+        color: var(--first-color);
+
+    }
+}
+
+.vh {
+    height: 100vh;
+    background-color: var(--white-color);
+}

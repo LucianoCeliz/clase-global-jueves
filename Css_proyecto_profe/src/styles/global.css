@@ -1,0 +1,92 @@
+/*HOJA GLOBAL SIRVE PARA COSAS GLOBALES QUE VAN A LLEVAR TODAS LAS HOJAS DEL PROYECTO*/
+
+/*IMPORTACION DE FUENTES u otras cosas importables */
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+/******************** CUSTOM PROPERTIES (Propiedades prefabricadas que vamos a reutilizar, asigando un valor y accediendo a la referencia de ese espacio*******************/ 
+/*root es la raiz de todo el documento, permite acceder a esa variable desde las otras hojas de css*/
+
+:root{
+    --first-color: #54a354;
+    --first-alpha-color: #54a354cc;
+    --second-color: #785F44;
+    --white-color: #ffffff;
+    --first-font: 'Poller One' , cursive;
+}
+
+/********************** RESET (Quitarle al html algunos efectos x defecto que tienen las etiquetas html ***********************/
+
+*{
+    box-sizing: border-box; /*Bordes puedan fusionarse con los contenedores*/
+    margin: 0; /*Margenes por defecto se reduzcan a 0*/
+    padding: 0; /*Rellenos a 0 tambien*/
+}
+html{
+    font-size: 16px; /*Valor base de los REM */
+}
+body{
+    font-family: var(--first-font); /*Tipo de fuente*/
+    overflow-x: hidden; /* Evita que se desborden las cosas y aparezca la barra horizontal*/
+}
+a{
+    text-decoration: none; /*Quita subrayado a los enlaces*/
+    color: var(--white-color); /*Color que quiero en los enlaces*/
+}
+
+/************************ UTILITIES (Clase que pretendo usar en muchos elementos)**************************/
+.btn{ /* Se coloca un boton cada vez que pongo esa variable*/
+    display: inline-block; /*Forma de bloque*/
+    background-color: var(--first-color); /*Color de fondo*//*Version Original*/
+    color: var(--white-color); /*Color de letra*/
+    padding: 2rem; /*Relleno al boton*/
+    border-radius: 0.5rem; /*Borde de radio*/
+    text-decoration: none; /*Decoracion del boton*/
+    font-weight: bold; /*Estilos de letra del boton*/
+    font-size: 1.3rem; /*Estilos de letra del boton*/
+    text-transform: uppercase; /*Estilos de letra del boton*/
+    line-height: 0; /*Estilos de la letra del boton*/
+    font-family: var(--first-font); /*Tipo de fuente del boton*/
+    height: 3.3rem; /*Altura del boton*/
+    transition: 0.3s; /*Transicion al pasar el click por arriba*/
+    width: 200px; /*Ancho*/
+}
+.btn:hover{/*Hace que cuando pase el click por arriba del boton cambie de la version original a la con transparencia*/
+    background-color: var(--first-alpha-color); /*Version con transparencia*/
+}
+
+/*********************** SITE STYLES (Estilos que involucran a todo el sitio web) ********************/
+/******** NAVBAR *********/
+
+.nav_container{
+    display: flex; /*Forma de fila*/
+    justify-content: space-between; /*Coloca un elemento en cada punta (Por un lado logo y otro nav_menu)*/
+    align-items: center; /*Alinear en el eje y*/
+    padding: 0 2%; /*Me permite que al achicar la pantalla se ajuste la misma*/
+    position: fixed; /*Nos siga la barra*/
+    width: 100%; /*Coloca la barra del ancho de la pantalla*/
+
+
+    & .logo{
+        display: flex;
+        align-items: center;
+        column-gap: 10px; /*Brecha en los costados de forma de columna*/
+        & img {
+            width: 60px;
+        }
+    }
+    & .nav_menu {
+        display: flex;
+        column-gap: 50px;
+
+        & .nav_item {
+            transition: 0.3s;
+        }
+        & .nav_item:hover {
+            color: var(--second-color); 
+        }
+    }
+}
+.nav_active {
+    background-color: var(--first-color);
+}
+
