@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* GRID
+   
+  Es una caracteristica del lenguaje que nos permite establecer estructuras ya sea de columnas,
+  filas o una combinacion de ambas (una grilla)
+
+*/
+
+   .container {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+
+    display: grid;  /*Permite que el sistema calcule el tamaño del container y lo reparta en partes iguales*/
+    grid-template-columns: repeat(5, 1fr);  /* Nos permite elegir como estructuras los elementos si en columnas o filas(rown), y hay que poner un valor a cada columna o fila*/
+                                            /*Repeat: Algoritmo que nos da un valor dependiendo de lo que le demos en los parentesis
+                                             (cantidad y dimension)
+                                             5columnas    1fr          Ej: repeat (5 , 1fr)*/
+                                             /*Si quiero fijar una columna, pongo los pixeles en el lugar donde la queremos Ej: 100px repeat(16 , 1fr)*/
+   
+    column-gap: 40px;      /*Brecha entre los elementos*/
+
+}
+
+.box {
+    background-color: gray;
+    border: 1px solid white;
+    color: white;
+}
+
+/*
+    MEDIA QUERIES
+
+    Es una caracteristica que nos permite establecer nuevos valores para las propiedades de nuestros selectores
+    en cada dispositivo en el que deseemos mostrar nuestro sitio o app.(Adaptacion a los distintos dispositivos)
+    Conviene empezar de celular a tablet y al ultimo computadora. Por estas razones: 
+    - Se utilizan mas los celulares que el resto de dispositivos.
+    - Procesamiento de pc es mayor a lo del celu. Por eso hay que empezar del celular para optimizar.
+
+*/
+/*********** MOBILE *************/
+.page {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+
+
+    & section {
+        background-color: rgb(126, 43, 50);
+        border: 2px solid white;
+    }
+}
+
+/************ TABLET **************/
+
+@media screen and (min-width: 768px){                 /*Media screen: Estas medidas solo afectan a la vista del navegador.*/
+                                                       /*Print: Vista de impresion(No se recomienda invadir esa vista)*/ 
+    .page {                                            /*All: Incluye los dos anteriores*/
+         grid-template-columns: repeat(2 , 1fr);
+                                                    
+                                                    
+          & section {
+                background-color: rgb(43, 56, 129);
+            }
+    }                                                             
+
+}
+
+/*********** LAPTOP *********/
+
+@media screen and (min-width: 1300px) {
+
+    .page {
+        grid-template-columns: repeat(4 , 1fr);
+                                                   
+                                                   
+         & section {
+               background-color: rgb(24, 73, 14);
+           }
+   }           
+    
+}
+
+
+
+
+
